@@ -6,7 +6,9 @@
   "include": ["vite.config.*", "vitest.config.*", "cypress.config.*", "playwright.config.*"],
   "compilerOptions": {
     "composite": true,
-    "noEmit": true,
-    "types": ["node"]
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "types": ["node"],
+    "tsBuildInfoFile": "./node_modules/.tsbuildinfo/tsconfig.node.tsbuildinfo"
   }
 }
